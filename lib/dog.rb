@@ -49,4 +49,9 @@ class Dog
       dog.save
       dog
     end
+    
+    def self.new_from_db(row)
+      sql = <<-SQL
+        new_dog = self.new
+        
 end
