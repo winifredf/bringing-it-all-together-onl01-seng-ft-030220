@@ -51,7 +51,13 @@ class Dog
     end
     
     def self.new_from_db(row)
-      sql = <<-SQL
-        new_dog = self.new
+      hash_of_attributes = {
+        :id => row[0]
+        :name => row[1]
+        :breed => row [2]
+      }
+      self.new(hash_of_attributes)
+    end
+      }
         
 end
