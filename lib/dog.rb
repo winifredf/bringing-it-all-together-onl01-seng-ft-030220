@@ -58,6 +58,6 @@ class Dog
       }
       self.new(hash_of_attributes)
     end
-      }
+    
         
 end
