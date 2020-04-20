@@ -34,6 +34,6 @@ class Dog
         VALUES (?, ?)
       SQL
       
-      DF[:conn].execute(sql, self.name, self.breed)
+      DB[:conn].execute(sql, self.name, self.breed)
     end
 end
